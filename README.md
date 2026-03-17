@@ -113,24 +113,26 @@ store_analytics_db
 ---
 
 ## ⚙️ Setup Instructions
-
-### 1️⃣ Clone the repository
-
 ```bash
+1️⃣ Clone the repository
 git clone <your-repo-url>
 cd FDE_Assignment
+
 2️⃣ Start services
 docker compose up --build
+
 3️⃣ Access Airflow
 http://localhost:8080
 Login:
 
 username: admin
 password: admin
+
 4️⃣ Run the Pipeline
 Enable DAG: marketing_ai_pipeline
 
 Click Trigger DAG
+
 
 🔍 Verification
 MongoDB
@@ -163,6 +165,7 @@ FDE_Assignment/
 │
 ├── docker-compose.yml
 └── README.md
+
 📌 Example Output
 MongoDB
 {
@@ -170,11 +173,14 @@ MongoDB
   "message": "I want to buy shoes",
   "embedding": [...]
 }
+
 Neo4j
 (User)-[:INTERACTED]->(Campaign)
+
 SQLite
 user_1 → 5
 user_2 → 3
+
 ⚠️ Notes
 Uses host.docker.internal for DB connections
 
@@ -194,3 +200,4 @@ Add Kafka for streaming
 📜 License
 For educational and assessment purposes
 
+```
