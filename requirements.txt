@@ -1,0 +1,9 @@
+pymongo
+sentence-transformers
+neo4j
+faiss-cpu
+numpy
+pandas
+redis
+sqlalchemy
+pydantic
